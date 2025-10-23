@@ -1,7 +1,7 @@
 with open("story.txt", "r", encoding="utf-8") as f:
     story = f.read()
 
-words = set()
+words = set() # holds unique words found in the story
 start_of_word = -1
 
 target_start = "<"
@@ -12,8 +12,8 @@ for i, char in enumerate(story):
         start_of_word = i
     
     if char == target_end and start_of_word != -1:
-        word = story[start_of_word: i + 1]
-        words.add(word)
-        start_of_word = -1
+        word = story[start_of_word: i + 1] 
+        words.add(word)   # adds found words to the word set()
+        start_of_word = -1 # reset for next word search
 
-print(words)
+answers = {}
