@@ -17,3 +17,12 @@ for i, char in enumerate(story):
         start_of_word = -1 # reset for next word search
 
 answers = {}
+
+for word in words:
+    answer = input("Enter a " + word + ": ")
+    answers[word] = answer
+
+for word in words:
+    story = story.replace(word, answers[word])
+
+print(story)
