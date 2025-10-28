@@ -10,6 +10,27 @@
 import random
 
 questions = {
+    "Which animal is known as the King of the Jungle?": "Lion",
+    "Who was the first man to walk on the moon?": "Neil Armstrong",
+    "What is the largest island in the world?": "Greenland",
+    "What is the main ingredient in guacamole?": "Avocado",
+    "Which ocean is the smallest by surface area?": "Arctic Ocean",
+    "Who invented the telephone?": "Alexander Graham Bell",
+    "What is the capital city of Australia?": "Canberra",
+    "Which planet has the most moons?": "Saturn",
+    "What is the chemical symbol for iron?": "Fe",
+    "What is the name of the longest bone in the human body?": "Femur",
+    "In which year did the first iPhone release?": "2007",
+    "What is the tallest animal in the world?": "Giraffe",
+    "Which blood type is known as the universal donor?": "O negative",
+    "What is the largest organ on the human body?": "Skin",
+    "Who is the Greek god of the sea?": "Poseidon"
+}
+
+
+
+
+"""questions = {
     "What keyword is used to define a function in Python?": "def",
     "What data type does the input() function return?": "str",
     "What symbol is used to start a comment?": "#",
@@ -25,11 +46,11 @@ questions = {
     "What is the value of bool(0)?": "False",
     "What method removes and returns the last item from a list?": "pop()",
     "What is the output of print(type([]))?": "<class 'list'>"
-}
+}"""
 
 def python_python_trivia_game(questions):
     questions_list = list(questions.keys())
-    total_questions = 5
+    total_questions = 15
     score = 0
 
     selected_questions = random.sample(questions_list, total_questions)
